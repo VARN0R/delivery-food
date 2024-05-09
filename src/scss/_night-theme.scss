@@ -1,0 +1,139 @@
+body.night-theme {
+  background-color: black;
+  color: #fff;
+}
+
+body.night-theme .btn {
+  position: relative;
+  z-index: 1;
+}
+
+body.night-theme .preview {
+  background-color: black;
+}
+
+body.night-theme .tabcontainer {
+  position: relative;
+  z-index: 1;
+}
+
+body.night-theme .bgc_blue {
+  background-color: rgba(210, 64, 255, 0.1);
+  z-index: 0;
+}
+
+body.night-theme .header__link {
+  color: #fff;
+  &:hover {
+    color: $primary;
+  }
+}
+
+body.night-theme .tabcontent {
+  background-color: black;
+  img {
+    opacity: 0.5;
+  }
+}
+
+body.night-theme .tabcontent__descr {
+  background-color: rgba(77, 25, 83, 0.8);
+  color: #fff;
+}
+
+body.night-theme .tabheader {
+  background-color: #000000;
+  &__items {
+    border-left: 1px solid #ffffff;
+  }
+  &__item {
+    color: rgba(193, 192, 192, 0.6);
+    &_active {
+      color: #ffffff;
+    }
+  }
+}
+
+body.night-theme .divider {
+  background-color: #fff;
+}
+
+body.night-theme .bgc_y {
+  background-color: rgba(0, 248, 255, 0.13);
+}
+
+body.night-theme .offer__slider-prev svg line, body.night-theme .offer__slider-next svg line {
+  stroke: #fff;
+}
+
+body.night-theme .offer__slider-prev svg path, body.night-theme .offer__slider-next svg path {
+  fill: #fff;
+}
+
+body.night-theme #current {
+  color: #fff;
+}
+
+body.night-theme #total {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+body.night-theme .offer__slider-counter {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+
+
+body.night-theme .offer__slide {
+  background-color: black;
+}
+
+body.night-theme .offer__slide img {
+  opacity: 0.5;
+}
+
+body.night-theme .calculating__choose-item {
+  background-color: rgba(0, 0, 0, 0.51);
+
+    color: #fff;
+
+}
+
+body.night-theme .calculating__choose-item_active {
+  background-color: $primary;
+}
+
+body.night-theme .calculating__divider {
+  background-color: #ffffff;
+}
+
+body.night-theme .menu__field {
+  background-color: rgba(8, 0, 255, 0.16);
+}
+
+body.night-theme .menu__item {
+  background-color: black;
+  img {
+    opacity: 0.5;
+  }
+}
+
+body.night-theme .order__form svg path {
+  fill: white;
+}
+
+body.night-theme .order__form svg line {
+  stroke: white;
+}
+
+body.night-theme .timer__block {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+body.night-theme .modal__content {
+  background-color: rgb(23, 22, 22);
+}
+
+body.night-theme .modal__close {
+  color: #fff;
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="night-theme">
+<header class="header">
+    <div class="header__left-block">
+        <div class="header__logo">
+            <img src="icons/logo.png" alt="Логотип">
+        </div>
+        <nav class="header__links">
+            <a href="#offerSection" class="header__link">О нас</a>
+            <a href="#calcSection" class="header__link">Калькулятор калорий</a>
+            <a href="#menuSection" class="header__link">Меню</a>
+            <a href="#promotionSection" class="header__link">Сделать заказ</a>
+        </nav>
+        <label id="switch" class="switch">
+            <input type="checkbox" id="slider">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="header__right-block">
+        <button class="btn btn_white" data-modal>Связаться с нами</button>
+    </div>
+</header>
+
+
+<div class="preview">
+    <div class="bgc_blue"></div>
+    <div class="container">
+        <div class="tabcontainer">
+            <div class="tabcontent">
+                <img src="img/tabs/vegy.jpg" alt="vegy">
+                <div class="tabcontent__descr">
+                    Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Для людей,
+                    которые интересуются спортом; активных и здоровых. Это абсолютно новый продукт с оптимальной ценой и
+                    высоким качеством!
+                </div>
+            </div>
+            <div class="tabcontent">
+                <img src="img/tabs/elite.jpg" alt="elite">
+                <div class="tabcontent__descr">
+                    Меню “Премиум” - мы используем не только красивый дизайн упаковки, но и качественное исполнение
+                    блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!
+                </div>
+            </div>
+            <div class="tabcontent">
+                <img src="img/tabs/post.jpg" alt="post">
+                <div class="tabcontent__descr">
+                    Наше специальное “Постное меню” - это тщательный подбор ингредиентов: полное отсутствие продуктов
+                    животного происхождения. Полная гармония с собой и природой в каждом элементе! Все будет Ом!
+                </div>
+            </div>
+            <div class="tabcontent">
+                <img src="img/tabs/balance.jpg" alt="vegy">
+                <div class="tabcontent__descr">
+                    Меню "Сбалансированное" - это соответствие вашего рациона всем научным рекомендациям. Мы тщательно
+                    просчитываем вашу потребность в к/б/ж/у и создаем лучшие блюда для вас.
+                </div>
+            </div>
+            <div class="tabheader">
+                <h3>Выберите стиль питания</h3>
+                <div class="tabheader__items">
+                    <div class="tabheader__item tabheader__item_active">Фитнес</div>
+                    <div class="tabheader__item">Премиум</div>
+                    <div class="tabheader__item">Постное</div>
+                    <div class="tabheader__item">Сбалансированное</div>
+                </div>
+            </div>
+        </div>
+        <div class="preview__life">Живи полной жизнью!</div>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<div id="offerSection" class="offer">
+    <div class="bgc_y"></div>
+    <div class="container">
+        <div class="offer__text">
+            <h2 class="title">Что мы можем вам предложить?</h2>
+            <div class="offer__descr">
+                Наша основная идея - это правильное питание. Оно может быть простым и вкусным. Мы не просто доставка, мы
+                сервис! Мы взяли на себя все расчеты БЖУ, калорийности, объемов порций и прочие важные, но скучные
+                аспекты. Вам остается только полезная, сытная и правильная еда, которую мы привозим прямо под дверь.
+            </div>
+        </div>
+        <div class="offer__action">
+            <button class="btn btn_dark" data-modal>Связаться с нами</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="offer__advantages">
+            <h2>Быстро и полезно</h2>
+            <div class="offer__advantages-text">
+                Готовка дома занимает много сил, времени и нервов. Мы привозим еду сразу на целый день, и ты можешь
+                действовать так, как тебе удобно, не подстраиваясь ни под кого и будучи уверенным в качестве продукта!
+            </div>
+            <h2>Правильный рацион</h2>
+            <div class="offer__advantages-text">
+                Мы разработали специальное меню, где учтены все нюансы правильного питания, от баланса БЖУ до их
+                приготовления и дробления рациона.
+            </div>
+        </div>
+        <div class="offer__slider">
+            <div class="offer__slider-counter">
+                <div class="offer__slider-prev">
+                    <svg width="38" height="5" viewBox="0 0 38 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="37.3206" y1="3.25" x2="7.32056" y2="3.25" stroke="black" stroke-width="2"/>
+                        <path d="M17.3205 -3.02842e-06L17.3205 4.25L7.43094e-07 4.25L8.32056 1.75L17.3205 -3.02842e-06Z"
+                              fill="black"/>
+                    </svg>
+                </div>
+                <span id="current">03</span>
+                /
+                <span id="total">04</span>
+                <div class="offer__slider-next">
+                    <svg width="38" height="5" viewBox="0 0 38 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="1" x2="30" y2="1" stroke="black" stroke-width="2"/>
+                        <path d="M20 4.25L20 1.51421e-06L37.3206 0L29 2.5L20 4.25Z" fill="black"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="offer__slider-wrapper">
+                <div class="offer__slider-inner">
+                    <div class="offer__slide">
+                        <img src="img/slider/pepper.jpg" alt="pepper">
+                    </div>
+                    <div class="offer__slide">
+                        <img src="img/slider/food-12.jpg" alt="food">
+                    </div>
+                    <div class="offer__slide">
+                        <img src="img/slider/olive-oil.jpg" alt="oil">
+                    </div>
+                    <div class="offer__slide">
+                        <img src="img/slider/paprika.jpg" alt="paprika">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<div id="calcSection" class="calculating">
+    <div class="container">
+        <h2 class="title">Рассчитаем вашу потребность в калориях?
+        </h2>
+        <div class="calculating__field">
+            <div class="calculating__subtitle">
+                Ваш пол
+            </div>
+            <div class="calculating__choose" id="gender">
+                <div id="female" class="calculating__choose-item calculating__choose-item_active">Женщина</div>
+                <div id="male" class="calculating__choose-item">Мужчина</div>
+            </div>
+
+            <div class="calculating__subtitle">
+                Ваша конституция
+            </div>
+            <div class="calculating__choose calculating__choose_medium">
+                <input type="text" id="height" placeholder="Введите рост, см" class="calculating__choose-item">
+                <input type="text" id="weight" placeholder="Введите вес, кг" class="calculating__choose-item">
+                <input type="text" id="age" placeholder="Введите возраст, год" class="calculating__choose-item">
+            </div>
+
+            <div class="calculating__subtitle">
+                Выберите вашу физическая активность
+            </div>
+            <div class="calculating__choose calculating__choose_big">
+                <div data-ratio="1.2" id="low" class="calculating__choose-item">Низкая активность</div>
+                <div data-ratio="1.375" id="small" class="calculating__choose-item calculating__choose-item_active">
+                    Невысокая активность
+                </div>
+                <div data-ratio="1.55" id="medium" class="calculating__choose-item">Умеренная активность</div>
+                <div data-ratio="1.725" id="high" class="calculating__choose-item">Высокая активность</div>
+            </div>
+
+            <div class="calculating__divider"></div>
+
+            <div class="calculating__total">
+                <div class="calculating__subtitle">
+                    Ваша суточная норма калорий:
+                </div>
+                <div class="calculating__result">
+                    <span>2700</span> ккал
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<div id="menuSection" class="menu">
+    <h2 class="title">Наше меню на день</h2>
+
+    <div class="menu__field">
+        <div class="container">
+
+        </div>
+    </div>
+</div>
+
+<div class="order">
+    <div class="container">
+        <div class="title">Заказывай пробный день прямо сейчас!</div>
+        <form action="#" class="order__form">
+            <input required placeholder="Ваше имя" name="name" type="text" class="order__input">
+            <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="order__input">
+            <svg width="38" height="5" viewBox="0 0 38 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="1" x2="30" y2="1" stroke="black" stroke-width="2"/>
+                <path d="M20 4.25L20 1.51421e-06L37.3206 0L29 2.5L20 4.25Z" fill="black"/>
+            </svg>
+
+            <button class="btn btn_dark btn_min">Перезвонить мне</button>
+        </form>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<div id="promotionSection" class="promotion">
+    <div class="bgc_y"></div>
+    <div class="container">
+        <div class="promotion__text">
+            <div class="title">Акция для новых клиентов!</div>
+            <div class="promotion__descr">
+                Мы ценим каждого клиента и предлагаем вам стать одним из них на очень выгодных условиях.
+                Каждому, кто закажет доставку питание на неделю, будет предоставлена скидка в размере <span>20%!</span>
+
+            </div>
+        </div>
+        <div class="promotion__timer">
+            <div class="title">Осталось до конца акции:</div>
+            <div class="timer">
+                <div class="timer__block">
+                    <span id="days">12</span>
+                    дней
+                </div>
+                <div class="timer__block">
+                    <span id="hours">20</span>
+                    часов
+                </div>
+                <div class="timer__block">
+                    <span id="minutes">56</span>
+                    минут
+                </div>
+                <div class="timer__block">
+                    <span id="seconds">20</span>
+                    секунд
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="social">
+            <a target="_blank" href="https://t.me/Varn0R" class="footer__social-item">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 30C23.2863 30 30 23.2863 30 15C30 6.71375 23.2863 0 15 0C6.71375 0 0 6.71375 0 15C0 23.2863 6.71375 30 15 30ZM6.86375 14.675L21.3263 9.09875C21.9975 8.85625 22.5837 9.2625 22.3662 10.2775L22.3675 10.2762L19.905 21.8775C19.7225 22.7 19.2337 22.9 18.55 22.5125L14.8 19.7487L12.9912 21.4913C12.7912 21.6913 12.6225 21.86 12.235 21.86L12.5013 18.0438L19.4513 11.765C19.7537 11.4987 19.3837 11.3488 18.985 11.6138L10.3963 17.0212L6.69375 15.8663C5.89 15.6112 5.8725 15.0625 6.86375 14.675Z"
+                          fill="white"/>
+                </svg>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/vlad_malchevskiy/" class="footer__social-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path d="M-9.01547e-07 9.37451L-4.09794e-07 20.6245C-1.83506e-07 25.8014 4.19812 29.9995 9.375 29.9995L20.625 29.9995C25.8019 29.9995 30 25.8014 30 20.6245L30 9.37451C30 4.19764 25.8019 -0.000487502 20.625 -0.000487275L9.375 -0.000486784C4.19812 -0.000486557 -1.12784e-06 4.19764 -9.01547e-07 9.37451ZM20.625 2.81201C24.2437 2.81201 27.1875 5.75576 27.1875 9.37451L27.1875 20.6245C27.1875 24.2433 24.2437 27.187 20.625 27.187L9.375 27.187C5.75625 27.187 2.8125 24.2433 2.8125 20.6245L2.8125 9.37451C2.8125 5.75576 5.75625 2.81201 9.375 2.81201L20.625 2.81201Z"
+                          fill="white"/>
+                    <path d="M7.5 14.9995C7.5 19.1414 10.8581 22.4995 15 22.4995C19.1419 22.4995 22.5 19.1414 22.5 14.9995C22.5 10.8576 19.1419 7.49951 15 7.49951C10.8581 7.49951 7.5 10.8576 7.5 14.9995ZM19.6875 14.9995C19.6875 17.5833 17.5837 19.687 15 19.687C12.4144 19.687 10.3125 17.5833 10.3125 14.9995C10.3125 12.4158 12.4144 10.312 15 10.312C17.5837 10.312 19.6875 12.4158 19.6875 14.9995Z"
+                          fill="white"/>
+                    <path d="M7.93685 6.93666C7.93685 6.38472 7.48942 5.93729 6.93748 5.93729C6.38554 5.93729 5.93811 6.38472 5.93811 6.93666C5.93811 7.4886 6.38554 7.93604 6.93748 7.93604C7.48942 7.93604 7.93685 7.4886 7.93685 6.93666Z"
+                          fill="white"/>
+                </svg>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/vladislav-malchevskiy-180702296/"
+               class="footer__social-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <g clip-path="url(#clip0_121273_46)">
+                        <path d="M3.48964 0.0216365C1.72589 0.277723 0.293966 1.72407 0.0486995 3.49504C-0.00540327 3.87736 -0.00540327 26.027 0.0450927 26.4491C0.120837 27.0334 0.355282 27.661 0.70154 28.1876C0.89631 28.4905 1.50948 29.1037 1.81245 29.2985C2.32462 29.6375 2.945 29.872 3.5221 29.9513C3.91525 30.0054 26.1118 30.0054 26.505 29.9513C27.4103 29.8251 28.2543 29.3886 28.8999 28.7069C29.4373 28.1407 29.7475 27.5527 29.9531 26.7087C30.0216 26.413 30.0216 3.55996 29.9531 3.2642C29.7295 2.34084 29.3868 1.72768 28.7593 1.12894C28.2146 0.60234 27.688 0.306578 26.9198 0.0937735L26.5735 -4.64643e-06L15.1398 -0.0036115C8.80975 -0.00721835 3.60866 0.00360221 3.48964 0.0216365ZM26.3932 2.34806C27.046 2.51758 27.5365 3.01893 27.67 3.65374C27.6988 3.7908 27.7097 7.01533 27.7097 14.9973C27.7097 27.2209 27.7241 26.33 27.5005 26.7773C27.2985 27.1812 26.7791 27.56 26.3066 27.6465C26.0397 27.697 3.98738 27.697 3.72048 27.6465C3.06042 27.5239 2.47972 26.9432 2.35348 26.2795C2.30298 26.0126 2.30298 3.96393 2.35348 3.69341C2.40758 3.40126 2.61317 3.01532 2.82598 2.79891C3.03157 2.59693 3.42471 2.38052 3.68801 2.33002C3.77819 2.31199 8.82778 2.29756 15.0135 2.29395C24.9973 2.29035 26.202 2.29756 26.3932 2.34806Z"
+                              fill="white"/>
+                        <path d="M6.42922 4.65284C6.03968 4.73941 5.62128 4.97024 5.30749 5.28404C4.39856 6.18936 4.40217 7.62128 5.3111 8.53021C6.21281 9.43192 7.6267 9.44274 8.53923 8.55185C8.96844 8.12985 9.19207 7.63931 9.22814 7.03336C9.32192 5.52209 7.92606 4.33544 6.42922 4.65284Z"
+                              fill="white"/>
+                        <path d="M4.62579 18.4491V25.3742H6.93418H9.24257V18.4491V11.5239H6.93418H4.62579L4.62579 18.4491Z"
+                              fill="white"/>
+                        <path d="M11.5509 18.4491V25.3742H13.8557H16.1641L16.1785 21.6664C16.193 17.6339 16.1894 17.6844 16.4022 17.0171C16.6438 16.2525 17.174 15.7728 17.9423 15.6177C18.2886 15.5491 18.9558 15.5491 19.2732 15.6141C20.0559 15.78 20.5068 16.3102 20.7015 17.284C20.7556 17.5726 20.7629 17.9621 20.7737 21.486L20.7881 25.3742H23.0965H25.4049L25.3904 21.2335C25.3796 17.6159 25.3688 17.0316 25.3147 16.5735C25.1921 15.5311 24.972 14.6582 24.6655 13.9946C24.2795 13.1614 23.6159 12.4725 22.8115 12.0685C21.4986 11.4085 19.1578 11.3436 17.8882 11.9315C17.2786 12.2128 16.7124 12.7178 16.3841 13.2696C16.294 13.4175 16.211 13.5437 16.1966 13.5437C16.1785 13.5437 16.1677 13.0893 16.1677 12.5338V11.5239H13.8593H11.5509V18.4491Z"
+                              fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_121273_46">
+                            <rect width="30" height="30" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<div class="modal">
+    <div class="modal__dialog">
+        <div class="modal__content">
+            <form action="#">
+                <div class="modal__close" data-close>&times;</div>
+                <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                <button class="btn btn_dark btn_min">Перезвонить мне</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="js/bundle.js"></script>
+</body>
+</html>

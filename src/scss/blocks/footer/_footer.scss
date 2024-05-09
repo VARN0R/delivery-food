@@ -1,0 +1,33 @@
+.footer {
+    min-height: 100px;
+    background-color: $dark;
+    padding: 35px 0 35px 0;
+    color: #fff;
+    .social {
+        width: 200px;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__social-item:hover svg path {
+        fill: $primary;
+        transition: 0.5s all;
+    }
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    .link {
+        display: block;
+        margin-top: 15px;
+        font-size: 16px;
+        color: #fff;
+    }
+    .call {
+        text-align: right;
+    }
+}
