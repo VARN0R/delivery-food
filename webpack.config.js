@@ -3,15 +3,15 @@
 let path = require('path');
 
 module.exports = {
-  mode: 'production',
-  entry: './src/js/script.js',
+  mode: 'development',
+  entry: './js/script.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: __dirname + '/js'
   },
-  watch: false,
+  watch: true,
 
-  devtool: false,
+  devtool: "source-map",
 
   module: {
     rules: [
@@ -22,7 +22,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: [['@babel/preset-env', {
-              debug: false,
+              debug: true,
               corejs: 3,
               useBuiltIns: "usage"
             }]]
