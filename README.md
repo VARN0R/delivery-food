@@ -4,13 +4,8 @@
 This is my single-page website, developed during the process of learning various technologies and tools.
 
 ## Project Features
-* Implementation of a:<br> 
-  timer,<br>
-  modal windows,<br> 
-  slider, <br>
-  rendering of data received from the server,<br> 
-  submission forms, <br>
-  and other functional elements on the vanilla JavaScript.<br>
+* Implementation of a timer, modal windows, slider, rendering of data received from the server, submission forms, 
+  and other functional elements on the vanilla JavaScript.
 * The entire project functionality is structured and organized into modules located in the js/modules folder.
 
 ## Technologies
