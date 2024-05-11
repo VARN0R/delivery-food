@@ -1,4 +1,3 @@
-# delivery-food
 
 ## About Project 
 This is my single-page website, developed during the process of learning various technologies and tools.
