@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./js/modules/calc.js":
-/*!****************************!*\
-  !*** ./js/modules/calc.js ***!
-  \****************************/
+/***/ "./src/js/modules/calc.js":
+/*!********************************!*\
+  !*** ./src/js/modules/calc.js ***!
+  \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -122,10 +122,10 @@ function calc() {
 
 /***/ }),
 
-/***/ "./js/modules/carts.js":
-/*!*****************************!*\
-  !*** ./js/modules/carts.js ***!
-  \*****************************/
+/***/ "./src/js/modules/carts.js":
+/*!*********************************!*\
+  !*** ./src/js/modules/carts.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -182,10 +182,10 @@ function carts() {
 
 /***/ }),
 
-/***/ "./js/modules/modalWindows.js":
-/*!************************************!*\
-  !*** ./js/modules/modalWindows.js ***!
-  \************************************/
+/***/ "./src/js/modules/modalWindows.js":
+/*!****************************************!*\
+  !*** ./src/js/modules/modalWindows.js ***!
+  \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -244,17 +244,17 @@ function showModalThanks(text, modalElement, modalSelector) {
 
 /***/ }),
 
-/***/ "./js/modules/sendForm.js":
-/*!********************************!*\
-  !*** ./js/modules/sendForm.js ***!
-  \********************************/
+/***/ "./src/js/modules/sendForm.js":
+/*!************************************!*\
+  !*** ./src/js/modules/sendForm.js ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _modalWindows__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modalWindows */ "./js/modules/modalWindows.js");
+/* harmony import */ var _modalWindows__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modalWindows */ "./src/js/modules/modalWindows.js");
 
 function sendForm(formsSelector) {
   const forms = document.querySelectorAll(formsSelector);
@@ -304,10 +304,10 @@ function sendForm(formsSelector) {
 
 /***/ }),
 
-/***/ "./js/modules/slider.js":
-/*!******************************!*\
-  !*** ./js/modules/slider.js ***!
-  \******************************/
+/***/ "./src/js/modules/slider.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/slider.js ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -462,10 +462,40 @@ function slider({
 
 /***/ }),
 
-/***/ "./js/modules/switcher.js":
-/*!********************************!*\
-  !*** ./js/modules/switcher.js ***!
-  \********************************/
+/***/ "./src/js/modules/smoothScroll.js":
+/*!****************************************!*\
+  !*** ./src/js/modules/smoothScroll.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function smoothScroll() {
+  const links = document.querySelectorAll('.header__link');
+  links.forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      console.log(targetId);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (smoothScroll);
+
+/***/ }),
+
+/***/ "./src/js/modules/switcher.js":
+/*!************************************!*\
+  !*** ./src/js/modules/switcher.js ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -506,10 +536,10 @@ function switcher() {
 
 /***/ }),
 
-/***/ "./js/modules/tabs.js":
-/*!****************************!*\
-  !*** ./js/modules/tabs.js ***!
-  \****************************/
+/***/ "./src/js/modules/tabs.js":
+/*!********************************!*\
+  !*** ./src/js/modules/tabs.js ***!
+  \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -560,10 +590,10 @@ function tabs() {
 
 /***/ }),
 
-/***/ "./js/modules/timer.js":
-/*!*****************************!*\
-  !*** ./js/modules/timer.js ***!
-  \*****************************/
+/***/ "./src/js/modules/timer.js":
+/*!*********************************!*\
+  !*** ./src/js/modules/timer.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -688,18 +718,20 @@ function timer(deadlineData, timerSelector) {
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!**********************!*\
-  !*** ./js/script.js ***!
-  \**********************/
+/*!**************************!*\
+  !*** ./src/js/script.js ***!
+  \**************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/tabs */ "./js/modules/tabs.js");
-/* harmony import */ var _modules_calc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/calc */ "./js/modules/calc.js");
-/* harmony import */ var _modules_carts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/carts */ "./js/modules/carts.js");
-/* harmony import */ var _modules_modalWindows__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/modalWindows */ "./js/modules/modalWindows.js");
-/* harmony import */ var _modules_sendForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/sendForm */ "./js/modules/sendForm.js");
-/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/slider */ "./js/modules/slider.js");
-/* harmony import */ var _modules_timer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/timer */ "./js/modules/timer.js");
-/* harmony import */ var _modules_switcher__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/switcher */ "./js/modules/switcher.js");
+/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/tabs */ "./src/js/modules/tabs.js");
+/* harmony import */ var _modules_calc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/calc */ "./src/js/modules/calc.js");
+/* harmony import */ var _modules_carts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/carts */ "./src/js/modules/carts.js");
+/* harmony import */ var _modules_modalWindows__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/modalWindows */ "./src/js/modules/modalWindows.js");
+/* harmony import */ var _modules_sendForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/sendForm */ "./src/js/modules/sendForm.js");
+/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/slider */ "./src/js/modules/slider.js");
+/* harmony import */ var _modules_timer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/timer */ "./src/js/modules/timer.js");
+/* harmony import */ var _modules_switcher__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/switcher */ "./src/js/modules/switcher.js");
+/* harmony import */ var _modules_smoothScroll__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/smoothScroll */ "./src/js/modules/smoothScroll.js");
+
 
 
 
@@ -743,6 +775,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // realization calculator of calories
   (0,_modules_calc__WEBPACK_IMPORTED_MODULE_1__["default"])();
   (0,_modules_switcher__WEBPACK_IMPORTED_MODULE_7__["default"])();
+  (0,_modules_smoothScroll__WEBPACK_IMPORTED_MODULE_8__["default"])();
 });
 })();
 

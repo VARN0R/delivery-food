@@ -9,6 +9,7 @@ import sendForm from "./modules/sendForm";
 import slider from "./modules/slider";
 import timer from "./modules/timer";
 import switcher from "./modules/switcher";
+import smoothScroll from "./modules/smoothScroll";
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -45,6 +46,8 @@ window.addEventListener('DOMContentLoaded', () => {
     calc();
 
     switcher();
+
+    smoothScroll();
 
 })
 
