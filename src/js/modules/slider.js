@@ -10,29 +10,6 @@ function slider({slide, container, current, total, next, prev, wrapper, field}) 
     const slidesField = document.querySelector(field);
     const widthSlidesWrapper = window.getComputedStyle(slidesWrapper).width;
 
-    let counter = 1;
-    let switchSlideBeforeClick = setInterval(() => {
-        if (offset === +widthSlidesWrapper.replace(/\D/g, '') * (slides.length - 1)) {
-            offset = 0;
-        } else {
-            offset += +widthSlidesWrapper.replace(/\D/g, '');
-        }
-
-        counterSlider++;
-        if (counterSlider > Number(totalNumSlide.innerText)) {
-            counterSlider = 1;
-        }
-
-        curNumSlide.innerText = isDoubleDigitNumber(counterSlider);
-
-        slidesField.style.transform = `translateX(-${offset}px)`;
-
-        dots.forEach(item => {
-            item.style.opacity = 0.5;
-        })
-        dots[counterSlider - 1].style.opacity = 1;
-    }, 2000)
-
     function isDoubleDigitNumber(num) {
         if (num < 10) {
             return `0${num}`;
