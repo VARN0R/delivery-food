@@ -1,6 +1,8 @@
 
 ## About Project 
-This is my single-page website, developed during the process of learning various technologies and tools.
+This is my single-page website, developed during the process of learning various technologies and tools. 
+You can just look at the finished version, but sending data and getting the menu won't work, because they use json-server. These features can only be viewed on your local machine.
+https://delivery-food.vladislav-malchevskiy.ru/. 
 
 ## Project Features
 * Implementation of a timer, modal windows, slider, rendering of data received from the server, submission forms, 
