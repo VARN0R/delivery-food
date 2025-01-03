@@ -9,27 +9,13 @@ _Читать описание проекта на других языках: [e
 Это мой сайт, разработанный в процессе изучения различных технологий и инструментов.
 Вы можете посмотреть на готовую версию, но отправить данные и получить меню не получится, потому что они используют json-сервер. Эти функции можно просмотреть локально, развернув проект у себя, или на этой гифке:
 
-<div>
+<p>
   <img 
-    src="https://github.com/user-attachments/assets/placeholder-image.jpg" 
-    data-gif="https://github.com/user-attachments/assets/f703983f-5d75-4b90-8111-bd67b76d26d9" 
-    alt="Загрузка GIF..." 
-    class="gif-placeholder" 
-    style="max-width: 100%; border: 1px solid #ddd; border-radius: 5px;" 
-  />
-</div>
-
-<script>
-  document.querySelectorAll('.gif-placeholder').forEach(img => {
-    const gifSrc = img.getAttribute('data-gif');
-    const gif = new Image();
-    gif.src = gifSrc;
-
-    gif.onload = () => {
-      img.src = gifSrc; // Заменяем заглушку на GIF
-    };
-  });
-</script>
+    src="https://github.com/user-attachments/assets/f703983f-5d75-4b90-8111-bd67b76d26d9" 
+    alt="Загрузка гифки... (описание функции работы с json-сервером)" 
+    style="max-width: 100%; display: block; margin: auto;" 
+    title="Гифка демонстрирует работу с json-сервером">
+</p>
 
 ## Особенности проекта
 
