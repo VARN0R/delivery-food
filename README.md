@@ -1,13 +1,15 @@
-## About Project
+![delivery-food-about](https://github.com/user-attachments/assets/5a657b4d-6da6-4f4d-aeae-d7de8bf50fed)
 
-This is my single-page website, developed during the process of learning various technologies and tools.
-You can just look at the finished version, but sending data and getting the menu won't work, because they use json-server. These features can only be viewed on your local machine.
+## About Project
 
 _Prod: https://delivery-food.vladislav-malchevskiy.ru/_
 
 _Read the project description in other languages: [en](README.md), [ru](README.ru.md)_
 
-![delivery-food-about](https://github.com/user-attachments/assets/5a657b4d-6da6-4f4d-aeae-d7de8bf50fed)
+This is my single-page website, developed during the process of learning various technologies and tools.
+You can just look at the finished version, but sending data and getting the menu won't work, because they use json-server. These functions can be viewed on your local computer or on this GIF:
+
+![launch-json-server](https://github.com/user-attachments/assets/f703983f-5d75-4b90-8111-bd67b76d26d9)
 
 ## Project Features
 
